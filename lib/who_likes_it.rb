@@ -2,11 +2,11 @@ class WhoLikesIt
 
 	def execute(names)
 
-		return 'no one likes this' if names.empty?
+		output = ' likes this'
 
-		return names.first + ' likes this' if names.length == 1
-
-		names[0] + ' and ' + names[1] + ' likes this'
+		return output.prepend('no one') if names.empty?
+		
+		output.prepend(names.join(', ').sub(/.*\K,/,' and'))
 
 	end
 
