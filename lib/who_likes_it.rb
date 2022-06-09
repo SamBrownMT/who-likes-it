@@ -4,7 +4,9 @@ class WhoLikesIt
 
 		return 'no one likes this' if names.empty?
 
-		names.first + ' likes this'
+		return names.first + ' likes this' if names.length == 1
+
+		names[0] + ' and ' + names[1] + ' likes this'
 
 	end
 
