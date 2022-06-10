@@ -10,28 +10,44 @@ describe WhoLikesIt do
 
 	end
 
-	it 'returns \'Sam likes this\' for a simple array' do
+	array = ["Sam"]
+
+	it "returns \'Sam likes this\' for a #{array}" do
 
 		expect(subject.execute(["Sam"])).to eq 'Sam likes this' 
 
 	end
 
-	it 'returns \'Sam and Alan likes this\' for an array of length 2' do
+	array2 = ["Sam",'Alan']
 
-		expect(subject.execute(["Sam",'Alan'])).to eq 'Sam and Alan likes this' 
+	it "returns \'Sam and Alan likes this\' for #{array2}" do
 
-	end
-
-	it 'returns \'Sam, Alan and Turing likes this\' for an array of length 3' do
-
-		expect(subject.execute(["Sam",'Alan','Turing'])).to eq 'Sam, Alan and Turing likes this' 
+		expect(subject.execute(array2)).to eq 'Sam and Alan likes this' 
 
 	end
 
-	it 'returns \'Sam, Alan and 2 others likes this\' for an array of length 4' do
+	array3 = ["Sam",'Alan','Turing']
 
-		expect(subject.execute(["Sam",'Alan','Turing','Christopher'])).
-		to eq 'Sam, Alan and 2 others likes this' 
+	it "returns \'Sam, Alan and Turing likes this\' for #{array3}" do
+
+		expect(subject.execute(array3)).to eq 'Sam, Alan and Turing likes this' 
+
+	end
+
+	array4 = ["Sam",'Alan','Turing','Christopher']
+
+	it "returns \'Sam, Alan and 2 others likes this\' for #{array4}" do
+
+		expect(subject.execute(array4)).to eq 'Sam, Alan and 2 others likes this' 
+
+	end
+
+	array5 = ["Sam",'Alan','Turing','Christopher','Robin','Winnie','Eeyore',
+						'Piglet','Tigger']
+
+	it "returns \'Sam, Alan and 2 others likes this\' for #{array5}" do
+
+		expect(subject.execute(array5)).to eq 'Sam, Alan and 2 others likes this' 
 
 	end
 
