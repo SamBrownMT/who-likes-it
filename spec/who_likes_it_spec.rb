@@ -45,9 +45,9 @@ describe WhoLikesIt do
 	array5 = ["Sam",'Alan','Turing','Christopher','Robin','Winnie','Eeyore',
 						'Piglet','Tigger']
 
-	it "returns \'Sam, Alan and 2 others likes this\' for #{array5}" do
+	it "returns \'Sam, Alan and 7 others likes this\' for #{array5}" do
 
-		expect(subject.execute(array5)).to eq 'Sam, Alan and 2 others like this' 
+		expect(subject.execute(array5)).to eq 'Sam, Alan and 7 others like this' 
 
 	end
 
