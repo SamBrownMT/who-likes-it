@@ -22,7 +22,7 @@ describe WhoLikesIt do
 
 	it "returns \'Sam and Alan likes this\' for #{array2}" do
 
-		expect(subject.execute(array2)).to eq 'Sam and Alan likes this' 
+		expect(subject.execute(array2)).to eq 'Sam and Alan like this' 
 
 	end
 
@@ -30,7 +30,7 @@ describe WhoLikesIt do
 
 	it "returns \'Sam, Alan and Turing likes this\' for #{array3}" do
 
-		expect(subject.execute(array3)).to eq 'Sam, Alan and Turing likes this' 
+		expect(subject.execute(array3)).to eq 'Sam, Alan and Turing like this' 
 
 	end
 
@@ -38,7 +38,7 @@ describe WhoLikesIt do
 
 	it "returns \'Sam, Alan and 2 others likes this\' for #{array4}" do
 
-		expect(subject.execute(array4)).to eq 'Sam, Alan and 2 others likes this' 
+		expect(subject.execute(array4)).to eq 'Sam, Alan and 2 others like this' 
 
 	end
 
@@ -47,7 +47,7 @@ describe WhoLikesIt do
 
 	it "returns \'Sam, Alan and 2 others likes this\' for #{array5}" do
 
-		expect(subject.execute(array5)).to eq 'Sam, Alan and 2 others likes this' 
+		expect(subject.execute(array5)).to eq 'Sam, Alan and 2 others like this' 
 
 	end
 
