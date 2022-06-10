@@ -28,4 +28,11 @@ describe WhoLikesIt do
 
 	end
 
+	it 'returns \'Sam, Alan and 2 others likes this\' for an array of length 4' do
+
+		expect(subject.execute(["Sam",'Alan','Turing','Christopher'])).
+		to eq 'Sam, Alan and 2 others likes this' 
+
+	end
+
 end
